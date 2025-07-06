@@ -1,0 +1,382 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 10vh;
+    width: 100vw;
+    background-color: #FFE99A;
+
+    display: flex;
+    justify-content: center;
+   
+    position: fixed;
+
+    z-index: 1;
+}
+
+
+nav > ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+ul > li> a{
+    text-decoration: none;
+    color: black;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul > li> a:active{
+    color: white;
+}
+
+
+
+.about{
+    height: 100vh;
+    background-color: #FFD586;
+
+    display: flex;
+    padding-top: 10vh;
+}
+
+.about > .image{
+    flex-basis: 45%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about > .image > #img{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    border: 2px solid black;
+    background-image: url(./Gokul_photo.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size:cover;
+}
+
+.about > .content {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap:25px;
+}
+
+.about > .content >h1{
+    display: block;
+    height: 50px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px white;
+}
+
+.about > .content > p{
+
+    padding-right: 70px ;
+    padding-left: 70px;
+    text-align: justify;
+
+    font-size: 20px;
+}
+
+.skills{
+    height: 100vh;
+    background-color: #FFD586;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: auto;
+
+    padding-top: 10vh;
+}
+
+.skills > h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px white;
+}
+
+
+.skills > .inner{
+    height: 600px;
+    width: 100vw;
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:30px;
+    overflow-x: auto;
+    
+}
+
+.inner > .box{
+    height: 50%;
+    width: 50%;
+    margin: 30px;
+    box-shadow: 10px 10px 20px black;
+    overflow-x: auto;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    background-color: black;
+    color: white;
+
+    transition: all 1s ease-in-out;
+}
+
+
+.box > img{
+    height: 70%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.box > p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+
+    margin-top: 20px;
+}
+
+.box:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color:black;
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+.project {
+    height: 100vh;
+    background-color: #FFD586;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 10vh;
+}
+
+.project > h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px white;
+}
+
+.project > .in{
+    height: 600px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+
+.project > .in > .box1{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+
+    cursor: pointer;
+
+    background-color: black;
+    color: white;
+
+    transition: all 1s ease-in-out;
+
+}
+
+.project > .in > .box1 > img{
+    height: 250px;
+    width: 100%;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project > .in > .box1 > p{
+    padding: 10px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.project > .in > .box1 > .button {
+    height: 20px;
+    
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.project > .in > .box1 > .button > button{
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+
+    background-color: wheat;
+}
+
+.project > .in > .box1 > .button > button > a{
+    text-decoration: none;
+    color: black;
+
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.project > .in > .box1:hover{
+    transform: scale(1.05);
+    background-color: white;
+    color:black;
+}
+
+.contact{
+    height: 10vh;
+    background-color: #FFE99A ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/*.contact > p{
+    color: black;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact > p >span{
+    color: black;
+    text-transform: lowercase;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}*/
+
+
+
+.contact > p > a{
+    text-decoration: none;
+    color: black;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact > p > a > i{
+    font-size: 30px;
+}
+
+.contact > p > a > #i1{
+    color: green;
+}
+
+.contact > p > a > #i2{
+    color:crimson;
+}
+
+.contact > p > a > #i3{
+    color: blue;
+}
+
+.contact > p > a > #i4{
+    color: green;
+}
+
+*::selection{
+    background-color: black;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about > .content > p {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+   .skills{
+    height: 1950px;
+   }
+
+    .skills > .inner {
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .inner > .box {
+        width: 80%;
+        height: auto;
+    }
+
+    .project{
+        height: 870px;
+    }
+
+    .project > .in {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    .project > .in > .box1 {
+        width: 90%;
+        height: auto;
+    }
+
+    .project > .in > .box1 > img {
+        height: 200px;
+    }
+
+    .contact {
+        flex-direction: row;
+        gap: 10px;
+        height: auto;
+        padding: 10px 0;
+    }
+}
